@@ -22,7 +22,7 @@ ul{
 a{
     text-decoration: none;
 }
-img{
+.category-item img{
     width: 100%;
 }
 h2{
@@ -35,13 +35,7 @@ h2{
 .icons ul{
     gap: 24px;
 }
-.cart{
-    display: none;
-}
 .menu{
-    display: none;
-}
-.actions-menu{
     display: none;
 }
 .categories{
@@ -51,50 +45,41 @@ h2{
     width: calc(( 100% - 90px ) / 4);
     text-align: center;
 }
-@media screen and (min-width:0px) and (max-width:1200px) {
+@media screen and (min-width:0px) and (max-width:1420px) {
     .container{
         width: calc( 100% - 180px );
     }
     .menu{
         display: flex;
-    }
-    .cart{
-        display: flex;
+        width: 30px;
     }
     .row ul{
         display: none;
     }
-    h2{
-        font-size: 14px
-    }
+}
+@media screen and (min-width:0px) and (max-width:1650px){
     .category-item{
-        width: calc(( 100% - 36px ) / 4);
-
+        width: calc(( 100% - 36px ) / 2);
+        padding-bottom: 50px;
+    }
+    h2{
+        padding-top: 8px;
+    }
+}
+@media screen and (min-width:0px) and (max-width:850px){
+    .category-item{
+        width: 100%;
     }
 }
 @media screen and (min-width:0px) and (max-width:680px) {
     .container{
         width: calc( 100% - 80px );
     }
-    .menu{
-        display: none;
-    }
-    .cart{
-        display: none;
-    }
-    .actions-menu{
-        display: flex;
-    }
     .categories{
     padding-top: 60px;
     }
-    .category-item{
-        width: 100%;
-        padding-bottom: 50px;
-    }
     h2{
         font-size: 17px;
-        padding-top: 8px;
     }
 }
 
